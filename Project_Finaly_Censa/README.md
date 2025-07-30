@@ -1,5 +1,5 @@
 # NOMBRE
-## Juan Esteban Lozano 
+## Samuel Castro Zapata
 
 ### 100 PALABRAS DE LO QUE HACE SU APLICACION
 
