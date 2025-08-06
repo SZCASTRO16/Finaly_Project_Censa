@@ -161,13 +161,13 @@ if ($conexion){
     
       <tbody class="table-group-divider">
         <tr>
-          <th scope="row"><?php $i?></td>
+          <th scope="row"><?php echo $fila["Id"]; ?></td>
           <td><?php echo $fila["Nombre"]; ?></td>
           <td><?php echo $fila["Apellido"]; ?></td>
           <td><?php echo $fila["Edad"]; ?></td>
           <td><?php echo $fila["Correo"]; ?></td>
           <td><?php echo $fila["Telefono"]; ?></td>
-          <td><a href="Update.php" type="button" class="btn btn-success">Editar</button></td>
+          <td><a href="Update.php?id=<?php echo $fila["Id"]; ?>" type="button" class="btn btn-success">Editar</button></td>
           <td><button class="btn btn-danger btn-sm">Eliminar</button></td>
         </tr>
       </tbody>
@@ -237,7 +237,7 @@ if ($conexion){
         </div>
         <div class="col">
         <label fot="Nombre" class="">Nombre</label>
-      <input type="text" class="form-control" id="Name" placeholder="Ingrese el Nombre" name="Nombre">
+      <input type="text" class="form-control" id="Name" placeholder="Ingrese el nombre" name="Nombre">
         </div>
       </div>
      
@@ -249,7 +249,7 @@ if ($conexion){
     <div class="col">
 
     <label fot="Apellido" class="Form-label">Edad</label>
-      <input type="text" class="form-control" id="Name" placeholder="Ingrese el apellido" name="Edad">
+      <input type="text" class="form-control" id="Name" placeholder="Ingrese la edad" name="Edad">
     </div>
    </div>
      
