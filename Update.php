@@ -36,9 +36,10 @@ if($con->Rowcount() == 0){
 }
 
 $registro = $con->fetch(PDO::FETCH_ASSOC);
-
-
 ?>
+
+
+
 
 <!DOCTYPE html>
 <html lang="es">
@@ -62,7 +63,8 @@ $registro = $con->fetch(PDO::FETCH_ASSOC);
       <div class="row">
         <div class="col">
         <label for="Name" class="">Id</label>
-      <input type="text" class="form-control" id="Name" value="<?php  echo  htmlspecialchars($registro['Id'])?>" name="Id">
+        <input type="text" class="form-control" id="Name" value="<?php echo htmlspecialchars($registro['Id']) ?>" name="id">
+
         </div>
         <div class="col">
         <label fot="Nombre" class="">Nombre</label>

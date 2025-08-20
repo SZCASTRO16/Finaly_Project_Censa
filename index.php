@@ -168,7 +168,7 @@ if ($conexion){
           <td><?php echo $fila["Correo"]; ?></td>
           <td><?php echo $fila["Telefono"]; ?></td>
           <td><a href="Update.php?id=<?php echo $fila["Id"]; ?>" type="button" class="btn btn-success">Editar</button></td>
-          <td><button class="btn btn-danger btn-sm">Eliminar</button></td>
+          <td><a href="Update.php?id=<?php echo $fila["Id"]; ?>" type="button" class="btn btn-success">Eliminar</button></td>
         </tr>
       </tbody>
 
@@ -233,7 +233,7 @@ if ($conexion){
       <div class="row">
         <div class="col">
         <label for="Name" class="">Id</label>
-      <input type="text" class="form-control" id="Name" placeholder="Ingrese el id" name="Id">
+      <input type="text" class="form-control" id="Name" placeholder="Ingrese el id" name="Id" readonlyn>
         </div>
         <div class="col">
         <label fot="Nombre" class="">Nombre</label>
