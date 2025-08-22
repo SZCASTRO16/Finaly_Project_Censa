@@ -168,7 +168,7 @@ if ($conexion){
           <td><?php echo $fila["Correo"]; ?></td>
           <td><?php echo $fila["Telefono"]; ?></td>
           <td><a href="Update.php?id=<?php echo $fila["Id"]; ?>" type="button" class="btn btn-success">Editar</button></td>
-          <td><a href="Update.php?id=<?php echo $fila["Id"]; ?>" type="button" class="btn btn-success">Eliminar</button></td>
+          <td><a href="Delate.php?id=<?php echo $fila["Id"]; ?>" type="button" class="btn btn-danger" onclick="return confirm('¿Estás seguro que deseas eliminar este registro?');">Eliminar</a></td>
         </tr>
       </tbody>
 
